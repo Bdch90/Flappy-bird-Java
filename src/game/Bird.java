@@ -5,36 +5,26 @@ import java.awt.*;
 
 public class Bird extends JPanel {
 
-    private static int hight = 200;
-    private int deadPoint = 200;
+    private static int y = 200;
 
-    public Bird() {
+    Bird() {
     }
 
-    public void drawBird(Graphics graphics) {
+    void drawBird(Graphics graphics) {
         graphics.setColor(Color.red);
-        graphics.fillRect(20, hight, 20, 20);
+        graphics.fillRect(20, y, 20, 20);
     }
 
-    public void inceaseHight() {
-        hight++;
+    void inceaseHight() {
+        y++;
     }
 
-    public void jump() {
-        hight -= 60;
-        System.out.println(hight);
+    void jump() {
+        y -= 50;
     }
 
-    public static int getHight() {
-        return hight;
-    }
-
-    public int getDeadPoint() {
-        return deadPoint;
-    }
-
-    public void setDeadPoint(int deadPoint) {
-        this.deadPoint = deadPoint;
+    public int getY() {
+        return y;
     }
 
 }

@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46178ac-896d-4003-8434-0c317f07c2ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappy-bird.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Bird.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Draw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Game$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Game$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Pipe.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Draw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Pipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/flappy-bird/game/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Bird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/flappy-bird/game/Draw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Draw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/flappy-bird/game/Pipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/flappy-bird/game/Pipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Pipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Pipe.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +28,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1R2sviB5i4gBEaARFxTzohT3gJ6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -73,6 +72,14 @@
       <option name="presentableId" value="Default" />
       <updated>1568876757826</updated>
     </task>
+    <task id="LOCAL-00001" summary="dng check die">
+      <created>1568958534682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568958534682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dng check die" />
+    <option name="LAST_COMMIT_MESSAGE" value="dng check die" />
   </component>
 </project>

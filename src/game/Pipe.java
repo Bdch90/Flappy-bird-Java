@@ -4,93 +4,125 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-public class Pipe extends JPanel {
-    private int width1 = 500;
-    private int width2 = width1 + 140;
-    private int width3 = width2 + 140;
-    private int width4 = width3 + 140;
+class Pipe extends JPanel {
+    private int x1 = 500;
+    private int x2 = x1 + 140;
+    private int x3 = x2 + 140;
+    private int x4 = x3 + 140;
 
-    private int height1, height2, height3, height4;
+    private int y1, y2, y3, y4;
 
     private boolean isRandom1 = false;
     private boolean isRandom2 = false;
     private boolean isRandom3 = false;
     private boolean isRandom4 = false;
 
-    public void drawPipe(Graphics graphic) {
+    void drawPipe(Graphics graphic) {
 
         Random random = new Random();
 
         if (!isRandom1) {
-            height1 = random.nextInt(200);
+            y1 = random.nextInt(200);
             isRandom1 = true;
         }
 
         if (!isRandom2) {
-            height2 = random.nextInt(200);
+            y2 = random.nextInt(200);
             isRandom2 = true;
         }
 
         if (!isRandom3) {
-            height3 = random.nextInt(200);
+            y3 = random.nextInt(200);
             isRandom3 = true;
         }
 
         if (!isRandom4) {
-            height4 = random.nextInt(200);
+            y4 = random.nextInt(200);
             isRandom4 = true;
         }
 
-        createTopPipe(graphic, width1, 50, height1);
-        createBottomPipe(graphic, width1, height1 + 100, 500);
+        createTopPipe(graphic, x1, y1);
+        createBottomPipe(graphic, x1, y1 + 200);
 
-        createTopPipe(graphic, width2, 50, height2);
-        createBottomPipe(graphic, width2, height2 + 100, 500);
+        createTopPipe(graphic, x2, y2);
+        createBottomPipe(graphic, x2, y2 + 200);
 
-        createTopPipe(graphic, width3, 50, height3);
-        createBottomPipe(graphic, width3, height3 + 100, 500);
+        createTopPipe(graphic, x3, y3);
+        createBottomPipe(graphic, x3, y3 + 200);
 
-        createTopPipe(graphic, width4, 50, height4);
-        createBottomPipe(graphic, width4, height4 + 100, 500);
+        createTopPipe(graphic, x4, y4);
+        createBottomPipe(graphic, x4, y4 + 200);
     }
 
-    public void createTopPipe(Graphics graphic, int left, int pipeWidth, int pipeHeight) {
+    void createTopPipe(Graphics graphic, int left, int pipeHeight) {
         graphic.setColor(Color.green);
-        graphic.fillRect(left, 0, pipeWidth, pipeHeight);
+        graphic.fillRect(left, 0, 50, pipeHeight);
     }
 
-    public void createBottomPipe(Graphics graphic, int left, int right, int pipeHeight) {
+    void createBottomPipe(Graphics graphic, int x, int y) {
         graphic.setColor(Color.green);
-        graphic.fillRect(left, right, 50, pipeHeight);
+        graphic.fillRect(x, y, 50, 500);
     }
 
-    public void decreaseWidth() {
-        width1--;
-        width2--;
-        width3--;
-        width4--;
+    void decreaseWidth() {
+        x1--;
+        x2--;
+        x3--;
+        x4--;
     }
 
-    public void repeat() {
-        if (width1 == -50) {
-            width1 = 500;
+    void repeat() {
+        if (x1 == -40) {
+            x1 = 500;
             isRandom1 = false;
         }
 
-        if (width2 == -50) {
-            width2 = 500;
+        if (x2 == -40) {
+            x2 = 500;
             isRandom2 = false;
         }
 
-        if (width3 == -50) {
-            width3 = 500;
+        if (x3 == -40) {
+            x3 = 500;
             isRandom3 = false;
         }
 
-        if (width4 == -50) {
-            width4 = 500;
+        if (x4 == -40) {
+            x4 = 500;
             isRandom4 = false;
         }
+    }
+
+    int getX1() {
+        return x1;
+    }
+
+    int getX2() {
+        return x2;
+    }
+
+    int getX3() {
+        return x3;
+    }
+
+    int getX4() {
+        return x4;
+    }
+
+    int getY1() {
+        return y1;
+    }
+
+    int getY2() {
+        return y2;
+    }
+
+    int getY3() {
+        return y3;
+    }
+
+    int getY4() {
+        return y4;
     }
 
 }
